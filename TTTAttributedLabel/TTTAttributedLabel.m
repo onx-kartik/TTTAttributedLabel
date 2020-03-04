@@ -1311,7 +1311,7 @@ afterInheritingLabelAttributesAndConfiguringWithBlock:(NSMutableAttributedString
             baseElement.accessibilityValue = [super accessibilityValue];
             baseElement.boundingRect = self.bounds;
             baseElement.superview = self;
-            baseElement.accessibilityTraits = [super accessibilityTraits];
+            baseElement.isAccessibilityElement = false;
 
             [mutableAccessibilityItems addObject:baseElement];
 
